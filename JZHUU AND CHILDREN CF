@@ -1,0 +1,21 @@
+#include<bits/stdc++.h>
+#define ll long long
+#define op() ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0);
+using namespace std;
+int main()
+{
+	op();
+	int n,m,last;
+	double t,max=0;// double e nite hoto otherwise vag korle int hoye jeto
+	cin>>n>>m;
+	for(int i=1;i<=n; i++)
+	{
+		cin>>t;
+        if(ceil(t/m)>=max)//** mathai ashto na actually
+		{
+			last=i;
+			max=ceil(t/m);
+		}
+	}
+	cout<<last<<endl;
+}
